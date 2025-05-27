@@ -1,34 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { ProjectCard } from "./components/ProjectCard"
+import { TypescriptIcon } from "./icons/TypescriptIcon"
+import { NodejsIcon } from "./icons/NodejsIcon"
+import { ReactjsIcon } from "./icons/ReactjsIcon"
+import Rank from "./assets/Rank.jpg"
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className = "h-screen w-screen p-8 bg-[#000000] top-0 gap-4" >
+      <div className = "flex flex-wrap p-4 gap-4">
+          <ProjectCard projectImage={Rank} title= "Brainly" githubUrl="www.github.com" tools ={ [<TypescriptIcon/>, <NodejsIcon/>, <ReactjsIcon/>]} liveUrl = "www.github.com"/>
+          <ProjectCard projectImage={Rank} title= "Brainly" githubUrl="www.github.com" tools ={ [<TypescriptIcon/>, <NodejsIcon/>, <ReactjsIcon/>]} liveUrl = "www.github.com"/>
+          <ProjectCard projectImage={Rank} title= "Brainly" githubUrl="www.github.com" tools ={ [<TypescriptIcon/>, <NodejsIcon/>, <ReactjsIcon/>]} liveUrl = "www.github.com"/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
