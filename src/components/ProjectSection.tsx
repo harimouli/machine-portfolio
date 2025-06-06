@@ -7,9 +7,9 @@ import { projects, type ProjectProps } from "../utils/projects";
 
 export const ProjectSection = () => {
     return (
-        <div id = "projects-section" className = "p-2">
+        <div  id = "projects" className = "p-2 mt-10">
                 <div className = "flex items-center flex-col p-4">
-                        <div className = "text-slate-300 text-2xl font-bold border border-slate-100 p-2 rounded-xl flex items-center justify-center">
+                        <div className = "text-slate-300 text-2xl font-bold  p-2 rounded-xl flex items-center justify-center underline">
                             My Work   
                         </div>
 
