@@ -1,13 +1,8 @@
 import { ProjectCard } from "./ProjectCard"
 
+import { projects, type ProjectProps } from "../utils/projects";
 
-import { TypescriptIcon } from "../icons/TypescriptIcon"
-import { NodejsIcon } from "../icons/NodejsIcon"
-import { ReactjsIcon } from "../icons/ReactjsIcon"
-import { HtmlIcon } from "../icons/HtmlIcon";
-import { TailwindcssIcon } from "../icons/TailwindcssIcon";
-import { ExpressIcon } from "../icons/ExpressIcon";
-import { MongoDbIcon } from "../icons/MongoDbIcon";
+
 
 
 export const ProjectSection = () => {
@@ -20,10 +15,18 @@ export const ProjectSection = () => {
 
                 </div>
             <div className = "flex flex-wrap items-center gap-6 p-4">
-                     <ProjectCard  title= "Brainly" githubUrl="www.github.com" tools ={ [<TypescriptIcon/>, <NodejsIcon/>, <ReactjsIcon/>,  <HtmlIcon/>, <TailwindcssIcon/>, <ExpressIcon/>, <MongoDbIcon/>]} liveUrl = "www.github.com"/>
-                     <ProjectCard  title= "Brainly" githubUrl="www.github.com" tools ={ [<TypescriptIcon/>, <NodejsIcon/>, <ReactjsIcon/>, <HtmlIcon/>, <TailwindcssIcon/>, <ExpressIcon/>, <MongoDbIcon/>]} liveUrl = "www.github.com"/>
-                     <ProjectCard  title= "Brainly" githubUrl="www.github.com" tools ={ [<TypescriptIcon/>, <NodejsIcon/>, <ReactjsIcon/>, <HtmlIcon/>, <TailwindcssIcon/>, <ExpressIcon/>, <MongoDbIcon/>]} liveUrl = "www.github.com"/>
-                     <ProjectCard  title= "Brainly" githubUrl="www.github.com" tools ={ [<TypescriptIcon/>, <NodejsIcon/>, <ReactjsIcon/>, <HtmlIcon/>, <TailwindcssIcon/>, <ExpressIcon/>, <MongoDbIcon/>]} liveUrl = "www.github.com"/>
+                {
+                    projects.map((eachProject: ProjectProps) => (
+                        <ProjectCard
+                            key={eachProject.title}
+                            title={eachProject.title}
+                            description={eachProject.description}
+                            tools={eachProject.tools}
+                            liveUrl={eachProject.liveUrl}
+                            githubUrl={eachProject.githubUrl}
+                        />
+                    ))
+                }
             
             </div>
         </div>
