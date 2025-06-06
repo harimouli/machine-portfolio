@@ -7,7 +7,7 @@ import { ReactjsIcon } from "../icons/ReactjsIcon"
 import { HtmlIcon } from "../icons/HtmlIcon";
 import { TailwindcssIcon } from "../icons/TailwindcssIcon";
 import { ExpressIcon } from "../icons/ExpressIcon";
-import Rank from "../assets/Rank.jpg"
+import { MongoDbIcon } from "../icons/MongoDbIcon";
 
 
 export const ProjectSection = () => {
@@ -20,9 +20,11 @@ export const ProjectSection = () => {
 
                 </div>
             <div className = "flex flex-wrap items-center gap-6 p-4">
-                     <ProjectCard projectImage={Rank} title= "Brainly" githubUrl="www.github.com" tools ={ [<TypescriptIcon/>, <NodejsIcon/>, <ReactjsIcon/>,  <HtmlIcon/>, <TailwindcssIcon/>, <ExpressIcon/>]} liveUrl = "www.github.com"/>
-                     <ProjectCard projectImage={Rank} title= "Brainly" githubUrl="www.github.com" tools ={ [<TypescriptIcon/>, <NodejsIcon/>, <ReactjsIcon/>, <HtmlIcon/>, <TailwindcssIcon/>, <ExpressIcon/>]} liveUrl = "www.github.com"/>
-                     <ProjectCard projectImage={Rank} title= "Brainly" githubUrl="www.github.com" tools ={ [<TypescriptIcon/>, <NodejsIcon/>, <ReactjsIcon/>, <HtmlIcon/>, <TailwindcssIcon/>, <ExpressIcon/>]} liveUrl = "www.github.com"/>
+                     <ProjectCard  title= "Brainly" githubUrl="www.github.com" tools ={ [<TypescriptIcon/>, <NodejsIcon/>, <ReactjsIcon/>,  <HtmlIcon/>, <TailwindcssIcon/>, <ExpressIcon/>, <MongoDbIcon/>]} liveUrl = "www.github.com"/>
+                     <ProjectCard  title= "Brainly" githubUrl="www.github.com" tools ={ [<TypescriptIcon/>, <NodejsIcon/>, <ReactjsIcon/>, <HtmlIcon/>, <TailwindcssIcon/>, <ExpressIcon/>, <MongoDbIcon/>]} liveUrl = "www.github.com"/>
+                     <ProjectCard  title= "Brainly" githubUrl="www.github.com" tools ={ [<TypescriptIcon/>, <NodejsIcon/>, <ReactjsIcon/>, <HtmlIcon/>, <TailwindcssIcon/>, <ExpressIcon/>, <MongoDbIcon/>]} liveUrl = "www.github.com"/>
+                     <ProjectCard  title= "Brainly" githubUrl="www.github.com" tools ={ [<TypescriptIcon/>, <NodejsIcon/>, <ReactjsIcon/>, <HtmlIcon/>, <TailwindcssIcon/>, <ExpressIcon/>, <MongoDbIcon/>]} liveUrl = "www.github.com"/>
+            
             </div>
         </div>
     )
