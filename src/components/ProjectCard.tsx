@@ -17,7 +17,7 @@ interface ProjectCardProps {
 export const ProjectCard = (props: ProjectCardProps) => {
 
     return (
-        <div className = "flex-col items-center  h-72  w-64 rounded-md shadow-slate-300 shadow-md transition duration-300  ease-in-out border-t border-slate-300 hover:scale-105 hover:shadow-2xl">
+        <div className = "flex-col items-center  h-72  w-64 rounded-md shadow-slate-300 shadow-md transition duration-300  ease-in-out border-t border-slate-300 hover:scale-105 hover:shadow-xl">
                 <div className= "h-40">
                     <img className = "h-full w-full rounded-md" src = {props.projectImage} alt = "project"/>
                 </div>
