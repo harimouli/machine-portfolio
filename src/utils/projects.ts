@@ -7,11 +7,6 @@ export interface ProjectProps {
 }
 
 
-
-
-
-
-
 export const projects:ProjectProps[] =[
  {
     title: "Second Brain",
@@ -28,8 +23,8 @@ export const projects:ProjectProps[] =[
       "TailwindCSS",
       "Express",
     ]
+  }, 
 
-  }
 ]
 
 
