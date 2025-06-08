@@ -7,14 +7,14 @@ import { projects, type ProjectProps } from "../utils/projects";
 
 export const ProjectSection = () => {
     return (
-        <div  id = "projects" className = "p-2 mt-10">
-                <div className = "flex items-center flex-col p-4">
-                        <div className = "text-slate-300 text-2xl font-bold  p-2 rounded-xl flex items-center justify-center underline">
+        <div  id = "projects" className = "p-2 mt-10 flex flex-col items-center">
+                <div className = "flex items-center p-4">
+                        <div className = "text-white text-2xl font-bold  p-2 rounded-xl flex items-center justify-center underline">
                             My Work   
                         </div>
 
                 </div>
-            <div className = "flex flex-wrap items-center gap-6 p-4">
+            <div className = "flex flex-wrap justify-center items-center gap-6 p-4">
                 {
                     projects.map((eachProject: ProjectProps) => (
                         <ProjectCard
