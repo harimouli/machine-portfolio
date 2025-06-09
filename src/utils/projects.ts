@@ -77,4 +77,4 @@ export const projects:ProjectProps[] =[
 
 ]
 
-export const  aboutme = " I'm a full-stack developer in the making who writes code with focus and precision. From React UIs to backend APIs, I build clean, efficient solutions. A dedicated DSA problem solver, I don’t just fix bugs—I learn from them."
+export const  aboutme = "Full-stack developer in the making, focused on building clean React UIs and robust backend APIs. Passionate DSA problem solver who learns from every bug."

@@ -1,40 +1,45 @@
-
+import  ParticleBackground  from "./ParticleBackground";
 import dp from "../assets/officialProfile.jpg";
-import { aboutme } from "../utils/projects";
+import {HeroIntro} from "./HeroIntro"
+import { LinkedinIcon } from "../icons/LinkedinIcon";
+import { GithubIcon } from "../icons/GithubIcon";
+
+
+import leetcode from "../assets/leetcode.svg"
 export const AboutMe = () => {
 
+
     return (
-
-        <div id = "about-me" className = "flex flex-col text-slate-300 p-4 mt-10 py-4">
-              <div className = "flex items-center flex-col p-4">
-                        <div className = "text-white text-2xl font-bold  p-2 rounded-xl flex items-center justify-center underline">
-                            About Me
-                        </div>
-
-                </div>
-              <div className = "flex flex-col items-center md:flex-row p-4 gap-2 border-1 border-slate-300 rounded-2xl shadow-md shadow-slate-200">
+    <>
+        <ParticleBackground/>
+        <div id = "Home" className = "flex flex-col items-center justify-center text-slate-300 p-4  py-4  h-screen max-w-[50rem]">
+            
+              <div className = "flex flex-col items-center gap-2 p-4">
                     <div>
-                        <img src = {dp} className = "rounded-full h-60 border-2 border-slate-300"/> 
+                        <img src = {dp} className = "rounded-full h-30 border-3 border-slate-100"/> 
                     </div>
-                    <div className = "pl-2 flex flex-col py-4">
-        
-                            <div className = "pb-2 text-2xl font-bold text-center md:text-start">
+                    <div className = "text-center">
+                        <HeroIntro/>
+                    </div>
+                  <div className = "flex items-center gap-4">
+                    <a href = "https://www.linkedin.com/in/muthyalaharimouli/" target = "_blank" className ="cursor-pointer">
+                        <LinkedinIcon />
+                    </a>
+                    <a href = "https://github.com/harimouli" target = '_blank' className = "cursor-pointer">
+                        <GithubIcon/>
+                    </a>
+                     <a href = "https://leetcode.com/u/MuthyalaHariMouli/" target ="_blank" className = "cursor-pointer">
+                        <img  src = {leetcode} alt = "codeImg"/>
 
-                                <h2>Hari Mouli Muthyala </h2>
-                            </div>
-                            <p className="text-slate-300 text-md leading-relaxed max-w-xl pb-2">
-                                    {aboutme}
-                                    <br />
-                                        <span className="text-white font-semibold">~MouliTheMachine</span>
-                            </p>
+                     </a>
 
+
+                        
 
                     </div>
-
-
-              </div>
-
+            </div>
         </div>
+    </>
     )
 }
 

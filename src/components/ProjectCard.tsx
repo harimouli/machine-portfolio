@@ -48,7 +48,7 @@ export const ProjectCard = (props: ProjectProps) => {
                                 </a>
                             </div>
                         </div>
-                      <div className = "flex flex-wrap text-sm pt-2">
+                      <div className = "flex flex-wrap text-slate-300 text-sm pt-2">
                             {props.description}
                        </div>
                         <div className = "flex flex-wrap gap-1 mt-2 items-center w-full">
