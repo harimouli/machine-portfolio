@@ -22,7 +22,7 @@ export const HeroIntro = () => {
   }, []);
 
   return (
-    <p className="text-slate-200 text-lg md:text-2xl lg:text-2xl leading-relaxed font-bold p-2">
+    <p className="text-slate-200 text-lg md:text-2xl lg:text-2xl leading-relaxed font-bold p-2 font-mono">
       Hello, I'm <span className="font-bold text-white">Mouli</span>. I'm a {" "}
       <AnimatePresence mode="popLayout">
         <motion.span

@@ -5,7 +5,7 @@ type navbuttonitemsType = string;
 
 
 export const navbuttonitems:navbuttonitemsType[] = [
-       "About Me",
+       "Home",
        "Projects",
        "My Socials"
 ];
