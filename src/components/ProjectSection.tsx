@@ -7,7 +7,7 @@ import { projects, type ProjectProps } from "../utils/projects";
 
 export const ProjectSection = () => {
     return (
-        <div  id = "projects" className = "p-6 mt-10 flex flex-col items-center overflow-x-hidden font-sans mb-8">
+        <div  id = "projects" className = "p-6 mt-10 flex flex-col items-center overflow-x-hidden font-sans md:mb-8">
                 <div className = "flex items-center p-4">
                         <div className = "text-white text-2xl font-bold  p-2 rounded-xl flex items-center justify-center underline">
                             My Work   

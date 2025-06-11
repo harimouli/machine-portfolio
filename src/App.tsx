@@ -4,6 +4,7 @@ import { Home } from "./components/Home";
 import { Footer } from "./components/Footer";
 import ContactMeForm from "./components/ContactMeForm"
 import { Skils } from "./components/Skils";
+import { AboutMe } from "./components/AboutMe";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Home/>
           <ProjectSection/>
           <Skils/>
+          <AboutMe/>
           <ContactMeForm/>
     </div>
      <Footer/>
