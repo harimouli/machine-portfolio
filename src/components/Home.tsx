@@ -11,11 +11,14 @@ import { ArrowRightIcon } from "../icons/ArrowRightIcon";
 import MouliResume from "../assets/MouliResume.pdf"
 
 
+
+
 export const Home = () => {
 
 
     return (
     <>
+     
         <ParticleBackground/>
         <div id = "home" className = "flex flex-col items-center justify-center text-slate-300 p-6  py-4  h-screen max-w-[50rem] font-sans mt-14 md:mt-2">
             
@@ -56,10 +59,17 @@ export const Home = () => {
                        </div>
                     </a>
                     </div>  
+
+
+                    
             </div>
         </div>
     </>
     )
 }
+
+
+
+
 
 

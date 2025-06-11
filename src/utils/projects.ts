@@ -77,4 +77,30 @@ export const projects:ProjectProps[] =[
 
 ]
 
-export const  aboutme = "Full-stack developer in the making, focused on building clean React UIs and robust backend APIs. Passionate DSA problem solver who learns from every bug."
+type SkilType = string[];
+
+export const SkillList:SkilType = [
+    "C++",
+    "Java",
+    "JavaScript",
+    "TypeScript",
+    "React.js",
+    "Node.Js",
+    "Python",
+    "REST APIs",
+    "MongoDB",
+    "JWT",
+    "SQL",
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+    "Recoil",
+    "Git",
+    "Data Structures",
+    "Algorithms",
+    "SQLITE",
+    "ExpressJS",
+    "Zod",
+    "PostgreSQL"
+
+] 
