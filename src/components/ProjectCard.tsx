@@ -13,6 +13,7 @@ import { MongoDbIcon } from "../icons/MongoDbIcon";
 
 import { type ProjectProps } from "../utils/projects";
 
+import {useRef} from "react"
 
 
 const iconMap: Record<string, React.ReactElement> = {
@@ -26,9 +27,33 @@ const iconMap: Record<string, React.ReactElement> = {
 };
 
 export const ProjectCard = (props: ProjectProps) => {
+    const cardRef = useRef<HTMLDivElement>(null);
 
+
+
+   /* const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>): void => {
+        const card = cardRef.current;
+        if (!card) return;
+        const rect = card.getBoundingClientRect();
+        const x: number = e.clientX - rect.left;
+        const y: number = e.clientY - rect.top;
+
+        const centerX: number = rect.width / 2;
+        const centerY: number = rect.height / 2;
+
+        const rotateX: number = ((y - centerY) / centerY) * 30;
+        const rotateY: number = ((x - centerX) / centerX) * -30;
+
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    }
+
+    const resetTransform = () => {
+        if (cardRef.current) {
+            cardRef.current.style.transform = "rotateX(0deg) rotateY(0deg)";
+        }
+    }; */
     return (
-        <div className = "flex-col items-center   w-64 rounded-md shadow-slate-300 shadow-md transition duration-300  ease-in-out border-t border-slate-300 hover:scale-100 hover:shadow-lg font-sans">
+        <div   ref = {cardRef} className = "flex-col items-center   w-64 rounded-md shadow-slate-300 shadow-md transition duration-300  ease-in-out border-t border-slate-300 hover:scale-100 hover:shadow-lg font-sans">
     
                 <div className = "p-3 h-fit  w-64 text-[#9F9FA9]">
                         <div className = "flex items-center justify-between mt-2">
