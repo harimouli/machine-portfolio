@@ -20,7 +20,7 @@ export const Home = () => {
     <>
      
         <ParticleBackground/>
-        <div id = "home" className = "flex flex-col items-center justify-center text-slate-300 p-6  py-4  h-screen max-w-[50rem] font-sans mt-10 md:mt-4">
+        <div id = "home" className = "flex flex-col items-center justify-center text-slate-300 p-6  py-4  h-screen max-w-[50rem] font-sans mt-8 md:mt-4">
             
               <div className = "flex flex-col items-center gap-2 p-4">
                     <div>
