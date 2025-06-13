@@ -4,7 +4,7 @@ import { SkillList } from "../utils/projects";
 
 export const Skils = () => {
   return (
-    <div id = "skills" className = "mb-10 flex flex-col items-center md:p-5">
+    <div id = "skills" className = "mb-10 mt-5 flex flex-col items-center md:p-5">
         <div className = "flex text-slate-100 mb-6 text-2xl font-medium underline">
             My Skills
         </div>
