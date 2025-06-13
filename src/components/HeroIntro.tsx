@@ -27,7 +27,7 @@ export const HeroIntro = () => {
       <AnimatePresence mode="popLayout">
         <motion.span
           key={index}
-          className="text-blue-900 font-bold"
+          className="text-blue-900 font-extra-bold"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}

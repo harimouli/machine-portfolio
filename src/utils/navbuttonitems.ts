@@ -8,5 +8,5 @@ export const navbuttonitems:navbuttonitemsType[] = [
        "Home",
        "Projects",
        "About Me",
-       "Skils"
+       "Skills"
 ];
