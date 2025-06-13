@@ -12,7 +12,7 @@ function App() {
   return (
     <>
        <Navbar />
-    <div className = "relative z-10  flex flex-col items-center min-h-screen w-screen p-8 soverflow-hidden bg-[#000000] font-sans" >
+    <div className = "relative z-10  flex flex-col items-center min-h-screen w-screen p-4 soverflow-hidden bg-[#000000] font-sans" >
           <Home/>
           <ProjectSection/>
           <AboutMe/>
