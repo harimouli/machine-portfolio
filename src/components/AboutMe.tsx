@@ -5,7 +5,7 @@
 export const AboutMe = () => {
     return (
 
-        <div id ="about-me" className = " flex flex-col items-center  md:mb-10 mt-10 pt-4 p-4 md:w-2xl h-screen">
+        <div id ="about-me" className = " flex flex-col items-center  md:mb-5 mt-10 pt-4 p-4 md:w-2xl h-screen">
                 <div className = "text-2xl text-slate-100 mb-6 underline font-medium">
                         About Me
                 </div>
