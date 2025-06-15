@@ -97,7 +97,7 @@ export const SkillList:SkilType = [
     "Data Structures",
     "Algorithms",
     "SQLITE",
-    "ExpressJS",
+    "Express.js",
     "Zod",
     "PostgreSQL"
 
