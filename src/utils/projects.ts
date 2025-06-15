@@ -26,18 +26,16 @@ export const projects:ProjectProps[] =[
   }, 
 
   {
-       title: "Second Brain",
-    liveUrl: "https://secondbrain-frontend-snowy.vercel.app",
-    githubUrl: "https://github.com/harimouli/secondbrain-frontend",
+       title: "Jobby App",
+    liveUrl: "https://moulijobbyapp1.ccbp.tech",
+    githubUrl: "https://github.com/harimouli/jobby-app-reactjs.git",
     description:
-      "A personal knowledge management application to collect, embed, and organize ideas, videos, tweets, and notes in one place.",
+      "A job search web app built with React.js and RESTful APIs. Lets users sign in, browse job listings, filter results, and view detailed job info.",
     tools: [
-      "MongoDB",
-      "TypeScript",
-      "Node.js",
+      "JavaScript",
       "React",
       "HTML",
-      "TailwindCSS",
+      "CSS",
       "Express",
     ]
 
